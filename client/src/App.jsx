@@ -16,6 +16,9 @@ function App() {
   const [messageV, setMessageV] = useState('');
   const [message, setMessage] = useState('');
 
+  const urlDeploy = "http://localhost:3001" && "https://dowload-yt.onrender.com";
+  const urlLocal = 'http://localhost:3001/descargar-video' && "https://dowload-yt.vercel.app/";
+
 
   const handleSubmitVideo = async (e) => {
     e.preventDefault();
@@ -52,7 +55,7 @@ function App() {
     e.preventDefault();
     setMessage(<span className='spiner'></span>)
     try {
-      const response = await axios.post('http://localhost:3001/descargar-audio', { url }, {
+      const response = await axios.post('https://dowload-yt.onrender.com/descargar-audio', { url }, {
         headers: {
           'Content-Type': 'application/json',
         }
@@ -63,7 +66,7 @@ function App() {
       // console.log(response.data);
       const fetchAudioFiles = async () => {
         try {
-          const response = await axios.get('http://localhost:3001/audio-descargado');
+          const response = await axios.get('https://dowload-yt.onrender.com/audio-descargado');
           
           console.log("GET Audio", response.data.audioFiles);
           setAudioFiles(response.data.audioFiles);
