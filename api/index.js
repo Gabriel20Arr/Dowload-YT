@@ -4,8 +4,9 @@ const express = require("express")
 const puppeteer = require("puppeteer");
 const youtubedl = require('youtube-dl-exec')
 const path = require('path');
-const fs = require("fs")
 const os = require('os');
+const fs = require('fs-extra');
+const cron = require('node-cron');
 
 const app = express();
 const port = 3001;
@@ -71,11 +72,6 @@ app.post('/descargar-video', async (req, res) => {
         preferFreeFormats: true
       });
 
-    // // Obtener la fecha y hora actual
-    // const fechaDescarga = new Date();
-
-    // // Establecer la fecha del archivo descargado
-    // fs.utimesSync(rutaVideo, fechaDescarga, fechaDescarga);
     
     res.status(200).json({ rutaVideo })
 } catch (error){ 
