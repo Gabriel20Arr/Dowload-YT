@@ -39,8 +39,6 @@
   justify-content: center;
   align-items: center;
 
-  /* background-color: #ffffffee; */
-
   color: black;
 
   margin-bottom: 100px;
@@ -291,4 +289,551 @@
     min-height: 100vh;
   }
 
+}
+
+
+@media screen and (max-width: 580px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    max-width: 100%;
+    height: 100vh;
+  }
+
+  .nav{
+    /* background-color: #fff; */
+    color: #000;
+    
+    display: flex;
+    align-items: center;
+  
+    min-width: 95%;
+    height: 40px;
+  
+    font-size: 20px;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .containerForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    color: black;
+    /* border: 1px solid red; */
+  
+    margin-bottom: 30px;
+    
+    width: 400px;
+    height: 100%;
+  }
+  
+  .title{
+    min-width: 100%;
+    color: black;
+    font-size: 27px;
+  }
+  
+  .title2{
+    min-width: 100%;
+    font-size: 27px;
+  }
+  
+  .imgYT{
+    width: 90px;
+    height: auto;
+  }
+  
+  .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+  }
+  
+  .containerSearch{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 1px solid blue; */
+  
+    max-width: 100%;
+  }
+  
+  .input{
+    min-width: 300px;
+    height: 30px;
+  
+    border: 2px solid red;
+    color: black;
+    background-color: white;
+  }
+
+  .contenedorImagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 250px;
+    max-height: 150px;
+    overflow: hidden;
+  }
+  
+  .contenedorImagen img{
+    width: 250px; 
+    height: 200px; 
+    object-fit: cover; 
+  }
+  
+  .contenedorImagen2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    max-width: 250px;
+    max-height: 150px;
+    overflow: hidden;
+  
+    animation:rotate-scale-down 0.5s linear both
+  }
+  
+  .contenedorImagen2 img{
+    width: 250px; 
+    height: 200px; 
+    object-fit: cover; 
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    min-width: 100%;
+    min-height: 100vh;
+  }
+
+  .nav{
+    /* background-color: #fff; */
+    color: #000;
+    
+    display: flex;
+    align-items: center;
+  
+    min-width: 95%;
+    height: 40px;
+  
+    font-size: 15px;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .containerForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    color: black;
+    /* border: 1px solid red; */
+  
+    margin-bottom: 30px;
+    
+    min-width: 100%;
+    height: 100%;
+  }
+  
+  .title{
+    min-width: 100%;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .title2{
+    min-width: 100%;
+    font-size: 25px;
+  }
+  
+  .imgYT{
+    width: 80px;
+    height: auto;
+  }
+  
+  .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
+  }
+  
+  .containerSearch{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+    max-width: 300px;
+  }
+  
+  .input{
+    min-width: 220px;
+    height: 30px;
+  
+    border: 2px solid red;
+    color: black;
+    background-color: white;
+  }
+  
+  .btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+    padding: 0 5px;
+    margin-left: 5px;
+    
+    height: 30px;
+    border: 2px solid red;
+    color: red;
+    background-color: #fff;
+  }
+  
+  .btn:hover {
+    background-color: red;
+    color: #fff;
+  }
+
+  .contenedorVideo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+    min-width: 300px;
+    max-height: 120px;
+  
+    border: 2px solid red;
+    background-color: #fff;
+  
+    margin-top: 20px;
+    padding: 5px;
+  
+    animation:bounce-top .9s linear both
+  }
+  
+  .contenedorImagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 0px;
+    margin: 0px;
+    
+    max-width: 190px;
+    max-height: 105px;
+
+    overflow: hidden;
+    /* border: 2px solid blue; */
+  }
+  
+  .contenedorImagen img{
+    width: 200px; 
+    height: 150px; 
+    object-fit: cover; 
+  }
+  
+  .contenedorImagen2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    max-width: 250px;
+    max-height: 150px;
+    overflow: hidden;
+  
+    animation:rotate-scale-down 0.5s linear both
+  }
+  
+  .contenedorImagen2 img{
+    width: 250px; 
+    height: 200px; 
+    object-fit: cover; 
+  }
+  
+  .message{
+    font-size: 15px;
+    text-wrap: wrap;
+    font-weight: bold;
+    color: rgb(5, 168, 5);
+    padding: 0 5px;
+  }
+
+  .message2{
+    /* font-size: 15px; */
+    text-wrap: wrap;
+    font-weight: bold;
+    color: rgb(5, 168, 5);
+    background-color: #fff;
+    padding: 0 5px;
+  
+    position: absolute;
+  }
+  
+  .containerDataBtn{
+    width: 200px;
+    max-height: 120px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    margin-left: 15px;
+    margin-right: 5px;
+  }
+  
+  .titleVideo{
+    font-size: 12px;
+    font-weight: bold;
+    overflow-wrap: break-word;
+  }
+  
+  .btnDescargar{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+    padding: 0 5px;
+    margin-top: 10px;
+    
+    height: 25px;
+    width: 95px;
+  
+    border: 2px solid red;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    color: red;
+    background-color: #fff;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    min-width: 100%;
+    min-height: 100vh;
+  }
+
+  .nav{
+    /* background-color: #fff; */
+    color: #000;
+    
+    display: flex;
+    align-items: center;
+  
+    min-width: 95%;
+    height: 40px;
+  
+    font-size: 15px;
+    font-weight: bolder;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .containerForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    color: black;
+    /* border: 1px solid red; */
+  
+    margin-bottom: 30px;
+    
+    min-width: 100%;
+    height: 100%;
+  }
+  
+  .title{
+    min-width: 100%;
+    color: black;
+    font-size: 22px;
+  }
+  
+  .title2{
+    min-width: 100%;
+    font-size: 22px;
+  }
+  
+  .imgYT{
+    width: 80px;
+    height: auto;
+  }
+  
+  .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
+  }
+  
+  .containerSearch{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+    max-width: 250px;
+  }
+  
+  .input{
+    min-width: 200px;
+    height: 30px;
+  
+    border: 2px solid red;
+    color: black;
+    background-color: white;
+  }
+  
+  .btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+    padding: 0 5px;
+    margin-left: 5px;
+    
+    height: 30px;
+    border: 2px solid red;
+    color: red;
+    background-color: #fff;
+  }
+  
+  .btn:hover {
+    background-color: red;
+    color: #fff;
+  }
+
+  .contenedorVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    max-width: fit-content;
+    max-height: 300px;
+  
+    border: 2px solid red;
+    background-color: #fff;
+  
+    margin-top: 20px;
+    padding: 5px;
+
+    animation:bounce-top .9s linear both
+  }
+  
+  .contenedorImagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    padding: 0px;
+    margin: 0px;
+    
+    max-width: 280px;
+    max-height: 140px;
+
+    overflow: hidden;
+    /* border: 2px solid blue; */
+  }
+  
+  .contenedorImagen img{
+    width: 250px; 
+    height: 200px; 
+    object-fit: cover; 
+  }
+  
+  .contenedorImagen2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    max-width: 250px;
+    max-height: 150px;
+    overflow: hidden;
+  
+    animation:rotate-scale-down 0.5s linear both
+  }
+  
+  .contenedorImagen2 img{
+    width: 250px; 
+    height: 200px; 
+    object-fit: cover; 
+  }
+  
+  .message{
+    font-size: 15px;
+    text-wrap: wrap;
+    font-weight: bold;
+    color: rgb(5, 168, 5);
+    padding: 0 5px;
+  }
+
+  .message2{
+    /* font-size: 15px; */
+    text-wrap: wrap;
+    font-weight: bold;
+    color: rgb(5, 168, 5);
+    background-color: #fff;
+    padding: 0 5px;
+  
+    position: absolute;
+  }
+  
+  .containerDataBtn{
+    min-width: 85%;
+    max-height: 120px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    /* border: 1px solid red; */
+  }
+  
+  .titleVideo{
+    font-size: 12px;
+    font-weight: bold;
+    overflow-wrap: break-word;
+  }
+  
+  .btnDescargar{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+    padding: 0 5px;
+    margin-top: 10px;
+    
+    height: 25px;
+    width: 95px;
+  
+    border: 2px solid red;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    color: red;
+    background-color: #fff;
+  }
 }

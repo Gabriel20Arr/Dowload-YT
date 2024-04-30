@@ -63,7 +63,7 @@ function App() {
         }
       });
       
-      console.log("test:", response.data);
+      // console.log("test:", response.data);
       await setMessage("Descarga completa");
       
     } catch (error) {
