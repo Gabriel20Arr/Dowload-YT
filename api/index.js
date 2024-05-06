@@ -26,7 +26,6 @@ app.post('/search', async (req, res) => {
           height: 520
       },
       timeout: 60000,
-      // args: ["--window-size=1920,1080"],
     });
 
     // abrimos Navegador
